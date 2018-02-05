@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Connectify</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheet/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+    <script type="text/javascript">
+$(document).ready(function () {
+
+      //toggle nav
+      $('#hamburger').on('click', function () {
+        $('#list').toggleClass('height-auto');
+        $('nav').toggleClass('height-fixed');
+
+      });
+
+    });
+
+    </script>
+  </head>
+  <body>
+    <div class="container-fluid">
+    <nav>
+      <div class="nav-cont">
+        <a id="logo">ConnectiFy</a>
+        <img src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-256.png" id="hamburger" />
+      </div>
+      <div id="list">
+        <div class="item 1">
+          <a id="about" class="btn btn-primary">Signup</a>
+        </div>
+        <div class="item 2">
+          <a class="btn btn-success">Login</a>
+        </div>
+        <div class="item 3">
+          <a class="btn btn-secondary">LogOut</a>
+        </div>
+
+
+      </div>
+    </nav>

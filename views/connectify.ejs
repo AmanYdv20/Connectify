@@ -1,0 +1,36 @@
+<% include partials/header %>
+<header class="jumbotron">
+  <div class="container-fluid">
+    <h1>ConnectiFy</h1>
+    <div class="content">
+      <div class="title">
+        <p>We make a <em>LIVING</> by what we <em>GET<em></p>
+        <p>but we make a <em>LIFE</em> by what we <em>GIVE</em></p>
+      </div>
+      <div class="item"><a href="#" class="btn btn-outline-success">Add Item</a></div>
+
+    </div>
+
+  </div>
+
+</header>
+<div class="row">
+  <% connectify.forEach(function(connect){ %>
+    <div class="col-md-3 col-sm-6">
+      <div class="card" style="width: 20rem;">
+        <div class="item">
+          <img class="card-img-top" style="height: 18rem" src="<%= connect.image %>" alt="Nothing hold on">
+          <a href="#" class="btn btn-danger" id="content_button">More</a>
+          <div class="card-block">
+          <h4 class="card-title"><%= connect.name %></h4>
+        </div>
+
+        </div>
+      </div>
+    </div>
+    <% }) %>
+</div>
+
+
+
+<% include partials/footer %>
