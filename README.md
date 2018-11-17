@@ -1,2 +1,2 @@
 # Connectify
-A project for better communication for better communication between collage students.
+A project for better communication between college students.
